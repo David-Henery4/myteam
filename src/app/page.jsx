@@ -1,9 +1,11 @@
-import Image from 'next/image'
+import { Header } from "@/components/home-page";
+import { HomePatternTwo } from "../../public/assets";
 
 export default function Home() {
   return (
-    <main className="">
-      <h1 className='font-bold'>Hello</h1>
+    <main className="grid grid-cols-mainGridMob mt-12">
+      <Header />
+      
     </main>
-  )
+  );
 }

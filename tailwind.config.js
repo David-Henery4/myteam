@@ -19,6 +19,9 @@ module.exports = {
     fontFamily: {
       livvic: ["var(--font-livvic)", "san-serif"],
     },
+    gridTemplateColumns: {
+      mainGridMob: "24px repeat(10,1fr) 24px",
+    },
     extend: {},
   },
   plugins: [],
