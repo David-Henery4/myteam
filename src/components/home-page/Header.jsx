@@ -26,7 +26,7 @@ const Header = () => {
         </div>
       </header>
       <div className="col-start-1 col-end-13 px-2 mx-auto w-full max-w-[358px] overflow-hidden">
-        <HomePatternTwo className="w-full relative top-36" />
+        <HomePatternTwo className="w-full relative top-32" />
       </div>
     </>
   );
