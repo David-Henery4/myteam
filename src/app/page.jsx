@@ -1,4 +1,4 @@
-import { Header, Services } from "@/components/home-page";
+import { Header, Services, Testimonials } from "@/components/home-page";
 
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
     <main className="grid grid-cols-mainGridMob mt-12">
       <Header />
       <Services/>
+      <Testimonials/>
     </main>
   );
 }

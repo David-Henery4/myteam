@@ -1,16 +1,18 @@
-// import { PersonIcon } from "../../../public/assets";
+// 'use client'
+import dynamic from "next/dynamic";
 import servicesData from "../../data/servicesData";
+
+// MIGHT REFACTOR THE ICONS FROM THE ARRAY
 
 const ServicesContainer = () => {
   return (
-    <div className="w-full text-center">
+    <div className="w-full text-center grid gap-12">
       {servicesData.map(service => {
-        const Svg = service.image
+        const DynamicSvg = dynamic(() => import(`../../../public/assets/${service.image}`))
         return (
           <div key={service?.id} className="w-full flex flex-col justify-center items-center gap-4">
             <div className="">
-              {/* <Svg/> */}
-              {/* {service.image} */}
+              <DynamicSvg/>
               {/* <service.image/> */}
             </div>
             <div className="w-full">

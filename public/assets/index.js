@@ -1,5 +1,6 @@
 // IMGs
 import avatarAden from "./avatar-aden.jpg"
+import avatarKady from "./avatar-kady.jpg"
 // SVGs
 import LogoIcon from "./logo.svg"
 import BurgerIcon from "./icon-hamburger.svg"
@@ -16,7 +17,7 @@ import ChartIcon from "./icon-chart.svg";
 
 export{
   //imgs
-
+  avatarKady,
   // svgs
   LogoIcon,
   BurgerIcon,
