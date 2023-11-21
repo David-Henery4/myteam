@@ -1,4 +1,5 @@
 import { Header, Services, Testimonials } from "@/components/home-page";
+import { Cta } from "@/components/shared";
 
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <Header />
       <Services/>
       <Testimonials/>
+      <Cta/>
     </main>
   );
 }

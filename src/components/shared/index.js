@@ -3,6 +3,7 @@ import MainTitleHeading from "./MainTitleHeading";
 import SecondaryHeading from "./SecondaryHeading";
 import BodyText from "./bodyText";
 import HeadingThree from "./HeadingThree";
+import Cta from "./Cta";
 
 
 export {
@@ -11,4 +12,5 @@ export {
   SecondaryHeading,
   BodyText,
   HeadingThree,
+  Cta,
 }
