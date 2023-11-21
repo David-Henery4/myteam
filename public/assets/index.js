@@ -1,6 +1,8 @@
 // IMGs
 import avatarAden from "./avatar-aden.jpg"
 import avatarKady from "./avatar-kady.jpg"
+import avatarArthur from "./avatar-arthur.jpg";
+import avatarAiysha from "./avatar-aiysha.jpg";
 // SVGs
 import LogoIcon from "./logo.svg"
 import BurgerIcon from "./icon-hamburger.svg"
@@ -13,11 +15,14 @@ import HomePatternSix from "./bg-pattern-home-6-about-5.svg"
 import PersonIcon from "./icon-person.svg";
 import CogIcon from "./icon-cog.svg";
 import ChartIcon from "./icon-chart.svg";
+import QuoteMark from "./icon-quotes.svg"
 
 
 export{
   //imgs
   avatarKady,
+  avatarAiysha,
+  avatarArthur,
   // svgs
   LogoIcon,
   BurgerIcon,
@@ -30,4 +35,5 @@ export{
   ChartIcon,
   CogIcon,
   PersonIcon,
+  QuoteMark,
 }

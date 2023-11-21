@@ -1,10 +1,5 @@
-import { Navbar, MainTitleHeading } from "../shared";
+import { Navbar, MainTitleHeading, BodyText } from "../shared";
 import {
-  HomePatternOne,
-  HomePatternFive,
-  HomePatternFour,
-  HomePatternSix,
-  HomePatternThree,
   HomePatternTwo,
 } from "../../../public/assets";
 
@@ -18,11 +13,11 @@ const Header = () => {
             <span className="block">Find the</span> Best{" "}
             <span className="text-primaryRed">Talent</span>
           </MainTitleHeading>
-          <p className="text-base font-semibold leading-7">
+          <BodyText>
             Finding the right people and building high performing teams can be
             hard. Most companies aren’t tapping into the abundance of global
             talent. We’re about to change that.
-          </p>
+          </BodyText>
         </div>
       </header>
       <div className="col-start-1 col-end-13 px-2 mx-auto w-full max-w-[358px] overflow-hidden">
