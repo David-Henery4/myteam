@@ -8,8 +8,8 @@ import testimonialsData from "../../data/testimonialsData";
 
 const Testimonials = () => {
   return (
-    <section className="relative col-start-1 col-end-13 pt-36 pb-40 grid grid-cols-mainGridMob bg-secondaryGreen">
-      <div className="w-full col-start-2 col-end-12">
+    <section className="relative col-start-1 col-end-13 pt-36 pb-40 grid grid-cols-mainGridMob xtraSmTab:grid-cols-mainGridTab bg-secondaryGreen">
+      <div className="w-full col-start-2 col-end-12 max-w-xl m-auto">
         <HomePatternFour className="absolute top-0 -left-6" />
         <div className="text-center">
           <SecondaryHeading>
@@ -20,13 +20,11 @@ const Testimonials = () => {
         {/* Testimonials Container */}
         <div className="w-full mt-[84px] text-center flex flex-col justify-center items-center gap-[84px]">
           {testimonialsData.map((testimonial) => {
-            return (
-              <TestimonialBox key={testimonial.id} {...testimonial}/>
-            );
+            return <TestimonialBox key={testimonial.id} {...testimonial} />;
           })}
         </div>
       </div>
-      <HomePatternFive className="absolute bottom-0 right-0"/>
+      <HomePatternFive className="absolute bottom-0 right-0" />
     </section>
   );
 };

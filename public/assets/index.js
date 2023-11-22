@@ -16,6 +16,10 @@ import PersonIcon from "./icon-person.svg";
 import CogIcon from "./icon-cog.svg";
 import ChartIcon from "./icon-chart.svg";
 import QuoteMark from "./icon-quotes.svg"
+import PinterestIcon from "./icon-pinterest.svg"
+import TwitterIcon from "./icon-twitter.svg";
+import FacebookIcon from "./icon-facebook.svg";
+
 
 
 export{
@@ -36,4 +40,7 @@ export{
   CogIcon,
   PersonIcon,
   QuoteMark,
+  FacebookIcon,
+  PinterestIcon,
+  TwitterIcon,
 }

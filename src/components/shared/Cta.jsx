@@ -1,14 +1,14 @@
-import { SecondaryHeading } from ".";
+import { SecondaryHeading, ContactUsBtn } from ".";
 import { HomePatternSix} from "../../../public/assets"
 
 const Cta = () => {
   return (
-    <section className="relative overflow-hidden col-start-1 col-end-13 grid grid-cols-mainGridMob bg-primaryRed text-center text-secondaryDarkVeryGreen">
-      <div className="w-full py-[90px] col-start-2 col-end-12">
+    <section className="relative overflow-hidden col-start-1 col-end-13 grid grid-cols-mainGridMob xtraSmTab:grid-cols-mainGridTab bg-primaryRed text-center text-secondaryDarkVeryGreen">
+      <div className="w-full py-[90px] col-start-2 col-end-12 max-w-xl mx-auto tab:flex tab:justify-between tab:items-center tab:gap-[84px]">
         <SecondaryHeading>Ready to get started?</SecondaryHeading>
-        <button className="text-lg font-semibold leading-7 px-8 py-3 mt-6 rounded-3xl border-2 border-secondaryDarkVeryGreen hover:bg-secondaryDarkVeryGreen hover:text-white active:text-secondaryDarkVeryGreen active:bg-opacity-0">
-          Contact Us
-        </button>
+        <div className="mt-6 tab:m-0">
+          <ContactUsBtn isCta={true} />
+        </div>
       </div>
       <HomePatternSix className="absolute -bottom-5 left-0" />
     </section>

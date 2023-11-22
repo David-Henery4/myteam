@@ -4,6 +4,8 @@ import SecondaryHeading from "./SecondaryHeading";
 import BodyText from "./bodyText";
 import HeadingThree from "./HeadingThree";
 import Cta from "./Cta";
+import Footer from "./Footer";
+import ContactUsBtn from "./ContactUsBtn";
 
 
 export {
@@ -13,4 +15,6 @@ export {
   BodyText,
   HeadingThree,
   Cta,
+  Footer,
+  ContactUsBtn,
 }

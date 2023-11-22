@@ -1,5 +1,6 @@
 import './globals.css'
 import { livvic } from './font'
+import { Navbar, Footer } from '@/components/shared'
 
 export const metadata = {
   title: 'Create Next App',
@@ -9,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${livvic.variable}`}>
-      <body className="overflow-x-hidden font-livvic bg-primaryGreen text-white">{children}</body>
+      <body className="overflow-x-hidden font-livvic bg-primaryGreen text-white">
+        <Navbar/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   )
 }

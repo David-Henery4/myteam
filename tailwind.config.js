@@ -6,6 +6,13 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      mob: "23.12em", // 370px
+      xtraSmTab: "30em", // 480px
+      smTab: "32.5em", // 520px
+      medTab: "38.75em", // 620px
+      tab: "47.5em", // 760px
+    },
     colors: {
       primaryGreen: "#014E56",
       primaryRed: "#F67E7E",
@@ -22,6 +29,7 @@ module.exports = {
     },
     gridTemplateColumns: {
       mainGridMob: "24px repeat(10,1fr) 24px",
+      mainGridTab: "40px repeat(10,1fr) 40px",
     },
     extend: {},
   },

@@ -6,7 +6,7 @@ import { BodyText, HeadingThree } from "../shared";
 
 const ServicesContainer = () => {
   return (
-    <div className="w-full text-center grid gap-12">
+    <div className="w-full text-center grid gap-12 smTab:text-left">
       {servicesData.map((service) => {
         const DynamicSvg = dynamic(() =>
           import(`../../../public/assets/${service.image}`)
@@ -14,7 +14,7 @@ const ServicesContainer = () => {
         return (
           <div
             key={service?.id}
-            className="w-full flex flex-col justify-center items-center gap-4"
+            className="w-full flex flex-col justify-center items-center gap-4 smTab:flex-row smTab:justify-center smTab:items-start smTab:gap-6"
           >
             <div className="">
               <DynamicSvg />
