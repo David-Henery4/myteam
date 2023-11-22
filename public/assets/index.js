@@ -12,8 +12,10 @@ import HomePatternThree from "./bg-pattern-home-3.svg"
 import HomePatternFour from "./bg-pattern-home-4-about-3.svg"
 import HomePatternFive from "./bg-pattern-home-5.svg"
 import HomePatternSix from "./bg-pattern-home-6-about-5.svg"
+import AboutAndMobilePattern from "./bg-pattern-about-1-mobile-nav-1.svg";
 import PersonIcon from "./icon-person.svg";
 import CogIcon from "./icon-cog.svg";
+import CloseIcon from "./icon-close.svg";
 import ChartIcon from "./icon-chart.svg";
 import QuoteMark from "./icon-quotes.svg"
 import PinterestIcon from "./icon-pinterest.svg"
@@ -43,4 +45,6 @@ export{
   FacebookIcon,
   PinterestIcon,
   TwitterIcon,
+  CloseIcon,
+  AboutAndMobilePattern,
 }

@@ -1,7 +1,8 @@
-import { BurgerIcon, LogoIcon } from "../../../public/assets";
+import { LogoIcon } from "../../../public/assets";
 import navData from "@/data/navData";
 import Link from "next/link";
 import { ContactUsBtn } from ".";
+import BurgerAndSidebar from "../navigation/BurgerAndSidebar";
 
 const Navbar = () => {
   return (
@@ -24,7 +25,7 @@ const Navbar = () => {
           })}
         </div>
       </div>
-      <BurgerIcon className="hover:cursor-pointer tab:hidden" />
+      <BurgerAndSidebar/>
       <div className="hidden tab:block">
         <ContactUsBtn />
       </div>
