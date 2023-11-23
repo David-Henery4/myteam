@@ -12,6 +12,13 @@ module.exports = {
       smTab: "32.5em", // 520px
       medTab: "38.75em", // 620px
       tab: "47.5em", // 760px
+      lgTab: "54.25em", // 868px
+      lap: "64em", // 1024px
+      lgLap: "66.87em", // 1070px
+      smDesk: "72.5em", // 1160px
+      medDesk: "76.87em", // 1230px
+      desk: "80.31em", // 1285px
+      lgDesk: "88.75em", // 1420px
     },
     colors: {
       primaryGreen: "#014E56",
@@ -31,6 +38,7 @@ module.exports = {
     gridTemplateColumns: {
       mainGridMob: "24px repeat(10,1fr) 24px",
       mainGridTab: "40px repeat(10,1fr) 40px",
+      mainGridLgTab: "80px repeat(10,1fr) 80px",
     },
     extend: {},
   },

@@ -9,11 +9,11 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full px-6 xtraSmTab:px-10 grid grid-cols-mainGridMob xtraSmTab:grid-cols-mainGridTab bg-black">
-      <div className="w-full py-16 col-start-1 col-end-13 flex flex-col justify-center items-center gap-10 text-center medTab:gap-[34px]">
+    <footer className="w-full px-6 xtraSmTab:px-10 grid grid-cols-mainGridMob xtraSmTab:grid-cols-mainGridTab lgTab:grid-cols-mainGridLgTab bg-black lgTab:px-20">
+      <div className="w-full max-w-[1110px] mx-auto py-16 col-start-1 col-end-13 flex flex-col justify-center items-center gap-10 text-center medTab:gap-[34px] medTab:py-14 lap:flex-row lap:justify-between lap:gap-0">
         {/**/}
 
-        <div className="w-full flex flex-col justify-center items-center gap-6 medTab:flex-row medTab:justify-between medTab:items-start">
+        <div className="w-full flex flex-col justify-center items-center gap-6 medTab:flex-row medTab:justify-between medTab:items-start lap:gap-[125px] lap:w-auto">
           <div>
             <div className="w-24 h-6 mb-6 mx-auto medTab:mb-14">
               <LogoIcon className="h-full w-full" />
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full medTab:flex medTab:justify-between medTab:items-center">
+        <div className="w-full medTab:flex medTab:justify-between medTab:items-center lap:flex-col lap:items-end lap:gap-[51px] lap:w-auto">
           <div className="flex justify-center items-center gap-4">
             <FacebookIcon />
             <PinterestIcon />

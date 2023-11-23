@@ -3,10 +3,12 @@ import { HomePatternSix} from "../../../public/assets"
 
 const Cta = () => {
   return (
-    <section className="relative overflow-hidden col-start-1 col-end-13 grid grid-cols-mainGridMob xtraSmTab:grid-cols-mainGridTab bg-primaryRed text-center text-secondaryDarkVeryGreen">
-      <div className="w-full py-[90px] col-start-2 col-end-12 max-w-xl mx-auto tab:flex tab:justify-between tab:items-center tab:gap-[84px]">
-        <SecondaryHeading>Ready to get started?</SecondaryHeading>
-        <div className="mt-6 tab:m-0">
+    <section className="relative overflow-hidden col-start-1 col-end-13 grid grid-cols-mainGridMob xtraSmTab:grid-cols-mainGridTab lgTab:grid-cols-mainGridLgTab bg-primaryRed text-secondaryDarkVeryGreen">
+      <div className="w-full text-center py-[90px] col-start-2 col-end-12 max-w-xl mx-auto gap-6 flex flex-col justify-between items-center tab:flex-row tab:gap-[84px] lgTab:max-w-[917px] lgTab:text-left lap:max-w-[1110px]">
+        <div className="flex-1">
+          <SecondaryHeading>Ready to get started?</SecondaryHeading>
+        </div>
+        <div className="tab:m-0">
           <ContactUsBtn isCta={true} />
         </div>
       </div>

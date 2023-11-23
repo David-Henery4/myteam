@@ -6,7 +6,7 @@ import { BodyText, HeadingThree } from "../shared";
 
 const ServicesContainer = () => {
   return (
-    <div className="w-full text-center grid gap-12 smTab:text-left">
+    <div className="w-full text-center grid gap-12 smTab:text-left medTab:gap-8 desk:w-auto">
       {servicesData.map((service) => {
         const DynamicSvg = dynamic(() =>
           import(`../../../public/assets/${service.image}`)
@@ -24,9 +24,11 @@ const ServicesContainer = () => {
               <HeadingThree>
                 <span className="text-primaryRed">{service.title}</span>
               </HeadingThree>
-              <BodyText>
-                <span className="text-white/80">{service.desc}</span>
-              </BodyText>
+              <div className="lgLap:max-w-[285px] smDesk:max-w-[377px] desk:max-w-[445px]">
+                <BodyText>
+                  <span className="text-white/80">{service.desc}</span>
+                </BodyText>
+              </div>
             </div>
           </div>
         );

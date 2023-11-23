@@ -4,7 +4,7 @@ import { Cta} from "@/components/shared";
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-mainGridMob xtraSmTab:grid-cols-mainGridTab">
+    <main className="grid grid-cols-mainGridMob xtraSmTab:grid-cols-mainGridTab lgTab:grid-cols-mainGridLgTab">
       <Header />
       <Services />
       <Testimonials />

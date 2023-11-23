@@ -6,7 +6,7 @@ import {
 
 const TestimonialBox = ({id, testimonial, name, job, img}) => {
   return (
-    <div key={id} className="">
+    <div key={id} className="lap:flex lap:flex-col lap:justify-between lap:items-center">
       <div className="relative">
         <div className="relative z-10">
           <BodyText>“{testimonial}”</BodyText>
