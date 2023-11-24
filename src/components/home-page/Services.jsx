@@ -14,7 +14,7 @@ const Services = () => {
           </SecondaryHeading>
         </div>
 
-        <HomePatternThree className="absolute top-0 -right-[140px] mob:-right-[100px]" />
+        <HomePatternThree className="absolute top-0 -right-[140px] mob:-right-[100px] medDesk:top-auto medDesk:bottom-0" />
 
         <ServicesContainer />
       </div>

@@ -7,12 +7,13 @@ const Header = () => {
       <HomePatternOne className="absolute top-[119px] -left-[100px] hidden lgDesk:block" />
       <div className="w-full col-start-2 col-end-12 max-w-[1110px] mx-auto">
         <header className="w-full text-center relative">
-          <div className="mt-20 flex flex-col justify-center items-center gap-5 tab:mt-28 tab:gap-6 lgTab:gap-8 medDesk:flex-row medDesk:items-end medDesk:text-left medDesk:justify-between medDesk:mt-[130px] medDesk:mb-11">
+          <div className="mt-20 flex flex-col justify-center items-center gap-5 tab:mt-28 tab:gap-6 lgTab:gap-8 medDesk:flex-row medDesk:items-stretch medDesk:text-left medDesk:justify-between medDesk:mt-[130px] medDesk:mb-11">
             <MainTitleHeading>
               <span className="block">Find the</span> Best{" "}
               <span className="text-primaryRed">Talent</span>
             </MainTitleHeading>
-            <div className="max-w-[457px] mx-auto medDesk:m-0 medDesk:max-w-[445px]">
+            <div className="max-w-[457px] mx-auto medDesk:m-0 medDesk:max-w-[445px] medDesk:flex medDesk:flex-col medDesk:justify-between medDesk:items-start">
+              <div className="w-[50px] h-1 hidden bg-secondaryLightBlue medDesk:block"></div>
               <BodyText>
                 <span className="lgTab:text-lg">
                   Finding the right people and building high performing teams
