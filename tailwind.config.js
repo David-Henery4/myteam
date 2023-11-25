@@ -39,6 +39,11 @@ module.exports = {
       mainGridMob: "24px repeat(10,1fr) 24px",
       mainGridTab: "40px repeat(10,1fr) 40px",
       mainGridLgTab: "80px repeat(10,1fr) 80px",
+      directorsContainer: "repeat( auto-fit, minmax(280px,1fr))",
+      // directorsContainerLg: "repeat( auto-fit, minmax(320px,1fr))",
+    },
+    gridTemplateRows: {
+      directorsBox: "1fr 28px 28px",
     },
     extend: {},
   },
