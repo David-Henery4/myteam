@@ -1,4 +1,5 @@
 import { AboutHeader, DirectorsSection, ClientSection } from "@/components/about";
+import { Cta } from "@/components/shared";
 
 const About = () => {
   return (
@@ -6,6 +7,7 @@ const About = () => {
       <AboutHeader/>
       <DirectorsSection/>
       <ClientSection/>
+      <Cta/>
     </main>
   );
 };

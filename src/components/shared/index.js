@@ -6,6 +6,7 @@ import HeadingThree from "./HeadingThree";
 import Cta from "./Cta";
 import Footer from "./Footer";
 import ContactUsBtn from "./ContactUsBtn";
+import SubPagesMainHeader from "./SubPagesMainHeader";
 
 
 
@@ -18,4 +19,5 @@ export {
   Cta,
   Footer,
   ContactUsBtn,
+  SubPagesMainHeader
 }
