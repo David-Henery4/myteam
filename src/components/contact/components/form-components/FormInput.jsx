@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 const FormInput = ({
   inputName,
+  label = "",
   formDetails: { formValues, setFormValues },
 }) => {
   const [isInputValueActive, setIsInputValueActive] = useState(false);
@@ -27,12 +28,12 @@ const FormInput = ({
         } 
         ${isInputValueActive ? "opacity-0" : "opacity-100"} `}
       >
-        {inputName}
+        { label === "" ? inputName : label}
       </label>
       {inputName !== "message" ? (
         <input
           type="text"
-          className={`w-full outline-none bg-white/0 border-b px-[14px] py-4 ${
+          className={`w-full outline-none bg-white/0 border-b px-[14px] pb-4 ${
             isInputActive ? "border-secondaryLightBlue" : "border-white"
           }`}
           id={inputName}
