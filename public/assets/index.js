@@ -30,6 +30,12 @@ import PinterestIcon from "./icon-pinterest.svg"
 import TwitterIcon from "./icon-twitter.svg";
 import FacebookIcon from "./icon-facebook.svg";
 import CrossIcon from "./icon-cross.svg"
+import gadgetsLogo from "./logo-gadgets-now.png";
+import jakartaLogo from "./logo-jakarta-post.png";
+import techRadarLogo from "./logo-tech-radar.png";
+import guardianLogo from "./logo-the-guardian.png";
+import vergeLogo from "./logo-the-verge.png";
+
 
 
 
@@ -44,6 +50,11 @@ export{
   avatarDrake,
   avatarGriffin,
   avatarNikita,
+  gadgetsLogo,
+  guardianLogo,
+  jakartaLogo,
+  techRadarLogo,
+  vergeLogo,
   // svgs
   LogoIcon,
   BurgerIcon,
