@@ -4,14 +4,14 @@ import servicesData from "@/data/servicesData";
 
 const ContactText = () => {
   return (
-    <div className="max-w-[515px] mx-auto">
+    <div className="w-full">
       <div>
         <SubPagesMainHeader>Contact</SubPagesMainHeader>
         <h2 className="mt-4 font-bold text-[32px] leading-[48px] text-primaryRed">
           Ask About Us
         </h2>
       </div>
-      <div className="flex flex-col gap-6 mt-10">
+      <div className="flex flex-col gap-6 mt-10 lgLap:mt-8 lgLap:gap-2">
         {servicesData.map((item) => {
           const DynamicSvg = dynamic(() =>
             import(`../../../../public/assets/${item.image}`)

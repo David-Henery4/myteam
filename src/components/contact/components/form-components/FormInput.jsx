@@ -6,7 +6,6 @@ const FormInput = ({
   formDetails: { formValues, setFormValues },
   inputErrors,
 }) => {
-  const [isInputValueActive, setIsInputValueActive] = useState(false);
   const [isInputActive, setIsInputActive] = useState(false);
   const [currentValue, setCurrentValue] = useState("");
   //

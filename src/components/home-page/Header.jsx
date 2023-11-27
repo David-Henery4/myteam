@@ -4,7 +4,7 @@ import { HomePatternTwo, HomePatternOne } from "../../../public/assets";
 const Header = () => {
   return (
     <div className="relative col-start-1 col-end-13 grid grid-cols-mainGridMob xtraSmTab:grid-cols-mainGridTab lgTab:grid-cols-mainGridLgTab">
-      <HomePatternOne className="absolute top-[119px] -left-[100px] hidden lgDesk:block" />
+      <HomePatternOne className="absolute top-[119px] -left-[100px] hidden xtraLgDesk:block" />
       <div className="w-full col-start-2 col-end-12 max-w-[1110px] mx-auto">
         <header className="w-full text-center relative">
           <div className="mt-20 flex flex-col justify-center items-center gap-5 tab:mt-28 tab:gap-6 lgTab:gap-8 medDesk:flex-row medDesk:items-stretch medDesk:text-left medDesk:justify-between medDesk:mt-[130px] medDesk:mb-11">

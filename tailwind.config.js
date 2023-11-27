@@ -18,7 +18,8 @@ module.exports = {
       smDesk: "72.5em", // 1160px
       medDesk: "76.87em", // 1230px
       desk: "80.31em", // 1285px
-      lgDesk: "88.75em", // 1420px
+      lgDesk: "86.25em", // 1380px
+      xtraLgDesk: "88.75em", // 1420px
     },
     colors: {
       primaryGreen: "#014E56",
