@@ -9,7 +9,11 @@ const DirectorsBox = ({ id, img, role, name, quote }) => {
   //
   return (
     <div key={id} className="grid grid-rows-directorsBox">
-      <div className="bg-secondaryDarkVeryGreen pt-8 px-6 pb-14 row-start-1 row-end-3 col-start-1 col-end-2 flex flex-col justify-center items-center gap-4">
+      <div
+        className={`pt-8 px-6 pb-14 row-start-1 row-end-3 col-start-1 col-end-2 flex flex-col justify-center items-center gap-4 ${
+          isQuoteActive ? "bg-black" : "bg-secondaryDarkVeryGreen"
+        }`}
+      >
         {isQuoteActive ? (
           <>
             <HeadingThree>
@@ -45,7 +49,11 @@ const DirectorsBox = ({ id, img, role, name, quote }) => {
           setIsQuoteActive(!isQuoteActive);
         }}
       >
-        <CrossIcon className={`fill-secondaryDarkVeryGreen transition-all ${isQuoteActive ? "rotate-45": "rotate-0"}`} />
+        <CrossIcon
+          className={`fill-secondaryDarkVeryGreen transition-all ${
+            isQuoteActive ? "rotate-45" : "rotate-0"
+          }`}
+        />
       </div>
     </div>
   );
