@@ -12,8 +12,8 @@ const ContactForm = () => {
     message: "",
   });
   //
-  const submitFinalValues = () => {
-    
+  const submitFinalValues = (finalValues) => {
+    console.log(finalValues)
   }
   //
   const {validation, errorsList} = useValidation(submitFinalValues)
@@ -26,25 +26,30 @@ const ContactForm = () => {
     <form className="w-full" onSubmit={(e) => e.preventDefault()}>
 
       <FormInput 
-        inputName="name" 
+        inputName="name"
+        inputErrors={errorsList?.name ? errorsList?.name : null}
         formDetails={{ formValues, setFormValues }} 
       />
       <FormInput
         inputName="email"
+        inputErrors={errorsList?.email ? errorsList?.email : null}
         label="email address"
         formDetails={{ formValues, setFormValues }}
       />
       <FormInput
         inputName="company"
+        inputErrors={errorsList?.company ? errorsList?.company : null}
         label="company name"
         formDetails={{ formValues, setFormValues }}
       />
       <FormInput
         inputName="title"
+        inputErrors={errorsList?.title ? errorsList?.title : null}
         formDetails={{ formValues, setFormValues }}
       />
       <FormInput
         inputName="message"
+        inputErrors={errorsList?.message ? errorsList?.message : null}
         formDetails={{ formValues, setFormValues }}
       />
 
