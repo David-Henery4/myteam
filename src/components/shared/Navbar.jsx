@@ -10,7 +10,9 @@ const Navbar = () => {
       <div className="flex justify-between items-center max-w-[1110px] mx-auto">
         <div className="tab:flex tab:justify-start tab:items-center tab:gap-12">
           <div className="w-32 h-8 lgTab:w-40 lgTab:h-10">
-            <LogoIcon className="h-full w-full" />
+            <Link href="/">
+              <LogoIcon className="h-full w-full" />
+            </Link>
           </div>
           <div className="hidden tab:block">
             {navData.map((navItem) => {

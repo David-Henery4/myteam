@@ -29,6 +29,7 @@ import QuoteMark from "./icon-quotes.svg"
 import PinterestIcon from "./icon-pinterest.svg"
 import TwitterIcon from "./icon-twitter.svg";
 import FacebookIcon from "./icon-facebook.svg";
+import LinkedInIcon from "./icon-linkedin.svg";
 import CrossIcon from "./icon-cross.svg"
 import gadgetsLogo from "./logo-gadgets-now.png";
 import jakartaLogo from "./logo-jakarta-post.png";
@@ -77,4 +78,5 @@ export{
   AboutFour,
   AboutPatternTwoContactOne,
   ContactTwo,
+  LinkedInIcon,
 }

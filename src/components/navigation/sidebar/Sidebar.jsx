@@ -24,14 +24,17 @@ const Sidebar = ({isSidebarOpen, setIsSidebarOpen}) => {
               key={navItem.id}
               className="text-[15px] font-semibold leading-[25px] hover:text-primaryRed"
               href={navItem.path}
+              onClick={() => {
+                setIsSidebarOpen(false);
+              }}
             >
               {navItem.label}
             </Link>
           );
         })}
       </div>
-      <ContactUsBtn isSidebar={true} />
-      <AboutAndMobilePattern className="absolute bottom-0 -right-[100px]"/>
+      <ContactUsBtn isSidebar={true} setIsSidebarOpen={setIsSidebarOpen} />
+      <AboutAndMobilePattern className="absolute bottom-0 -right-[100px]" />
     </aside>
   );
 }

@@ -1,6 +1,11 @@
+"use client"
 import Link from "next/link";
 
-const ContactUsBtn = ({ isCta = false, isSidebar = false }) => {
+const ContactUsBtn = ({
+  isCta = false,
+  isSidebar = false,
+  setIsSidebarOpen,
+}) => {
   return (
     <Link
       href="/contact"
@@ -11,6 +16,11 @@ const ContactUsBtn = ({ isCta = false, isSidebar = false }) => {
           ? "border-secondaryDarkVeryGreen hover:bg-secondaryDarkVeryGreen hover:text-white active:text-secondaryDarkVeryGreen active:bg-opacity-0 tab:flex-1"
           : "text-white border-white hover:bg-white hover:text-black active:bg-opacity-0 active:text-white"
       }`}
+      onClick={() => {
+        if (setIsSidebarOpen){
+          setIsSidebarOpen(false);
+        }
+      }}
     >
       Contact Us
     </Link>

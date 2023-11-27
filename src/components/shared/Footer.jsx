@@ -16,13 +16,15 @@ const Footer = () => {
         <div className="w-full flex flex-col justify-center items-center gap-6 medTab:flex-row medTab:justify-between medTab:items-start lap:gap-[125px] lap:w-auto">
           <div>
             <div className="w-24 h-6 mb-6 mx-auto medTab:mb-14">
-              <LogoIcon className="h-full w-full" />
+              <Link href="/">
+                <LogoIcon className="h-full w-full" />
+              </Link>
             </div>
             {navData.map((navItem) => {
               return (
                 <Link
                   key={navItem.id}
-                  className="last:ml-4 text-[15px] font-semibold leading-[25px]"
+                  className="last:ml-4 text-[15px] font-semibold leading-[25px] hover:text-primaryRed"
                   href={navItem.path}
                 >
                   {navItem.label}
@@ -40,9 +42,9 @@ const Footer = () => {
 
         <div className="w-full medTab:flex medTab:justify-between medTab:items-center lap:flex-col lap:items-end lap:gap-[51px] lap:w-auto">
           <div className="flex justify-center items-center gap-4">
-            <FacebookIcon />
-            <PinterestIcon />
-            <TwitterIcon />
+            <FacebookIcon className="fill-white hover:cursor-pointer hover:fill-primaryRed" />
+            <PinterestIcon className="fill-white hover:cursor-pointer hover:fill-primaryRed" />
+            <TwitterIcon className="fill-white hover:cursor-pointer hover:fill-primaryRed" />
           </div>
           <p className="mt-4 text-[15px] font-semibold leading-[25px] text-white/60 medTab:m-0">
             Copyright 2020. All Rights Reserved

@@ -12,7 +12,7 @@ const Cta = () => {
           <ContactUsBtn isCta={true} />
         </div>
       </div>
-      <HomePatternSix className="absolute -bottom-5 left-0" />
+      <HomePatternSix className="absolute -bottom-5 left-0 pointer-events-none" />
     </section>
   );
 };
